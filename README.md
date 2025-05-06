@@ -38,6 +38,5 @@ A feature-rich, production-ready e-commerce backend and admin panel built with *
 - **Auth**: JWT (python-jose), bcrypt
 - **File Uploads**: Static serving via Starlette
 - **Notifications**: DB-tracked logs for admin
-- **Docker**: Ready to containerize (future)
 
 ---
