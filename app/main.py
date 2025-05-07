@@ -13,7 +13,6 @@ async def get():
 
 
 # Include all routers here:
-# Include the users router
 app.include_router(users_router, prefix="/api/v1")
 
 

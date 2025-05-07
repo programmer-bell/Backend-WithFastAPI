@@ -34,7 +34,7 @@ A feature-rich, production-ready e-commerce backend and admin panel built with *
 ## 🧱 Tech Stack
 
 - **Backend**: FastAPI, SQLAlchemy, PostgreSQL, Pydantic, Alembic, Uvicorn
-- **Frontend**: React, TailwindCSS, ShadCN/UI
+- **Frontend**: Future ( Implement React)
 - **Auth**: JWT (python-jose), bcrypt
 - **File Uploads**: Static serving via Starlette
 - **Notifications**: DB-tracked logs for admin
