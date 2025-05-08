@@ -1,6 +1,7 @@
 from jose import JWTError, jwt
 from datetime import datetime, timedelta
 from app.core.config import settings
+from passlib.context import CryptContext
 
 def create_access_token(data: dict, expires_delta: timedelta = None):
     to_encode = data.copy()
@@ -10,11 +11,6 @@ def create_access_token(data: dict, expires_delta: timedelta = None):
     return encoded_jwt
 
 
-# app/core/security.py
-
-from passlib.context import CryptContext
-
-# Configure the password hashing context using bcrypt
 pwd_context = CryptContext(schemes=["bcrypt"], deprecated="auto")
 
 def get_password_hash(password: str) -> str:
