@@ -5,7 +5,7 @@ from app.schemas.user import UserCreate, UserOut
 from app.services import user_service
 from app.core.dependencies import get_db, get_current_user
 
-router = APIRouter(prefix="/users", tags=["Users"])
+router = APIRouter(prefix="", tags=["Users"])
 
 @router.post("/register", response_model=UserOut)
 def register(user_in: UserCreate, db: Session = Depends(get_db)):

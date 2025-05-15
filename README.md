@@ -39,3 +39,7 @@ A feature-rich, production-ready e-commerce backend and admin panel built with *
 - **File Uploads**: Static serving via Starlette
 - **Notifications**: DB-tracked logs for admin
 ---
+
+
+# cmd for start
+uvicorn app.main:app --reload
