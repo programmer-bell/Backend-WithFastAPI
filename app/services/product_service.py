@@ -1,14 +1,13 @@
 from sqlalchemy.orm import Session
-from app.db.repositories import product_repo
-from app.schemas.product import ProductCreate
-from typing import List
-from app.db.models.product import Product
+from app.db.repositories.product_repo import create_product, update_product, delete_product
+from app.schemas.product import ProductCreate, ProductUpdate
 
-def create_product_service(db: Session, product_in: ProductCreate) -> Product:
-    return product_repo.create_product(db, product_in)
+def create_product_service(db: Session, product_data: ProductCreate):
+    return create_product(db, product_data)
 
-def get_product_service(db: Session, product_id: int) -> Product:
-    return product_repo.get_product_by_id(db, product_id)
+def update_product_service(db: Session, product_id: int, updates: ProductUpdate):
+    return update_product(db, product_id, updates)
 
-def list_products_service(db: Session, skip=0, limit=10, search=None, category=None, price_min=None, price_max=None) -> List[Product]:
-    return product_repo.get_products(db, skip, limit, search, category, price_min, price_max)
+def delete_product_service(db: Session, product_id: int):
+    return delete_product(db, product_id)
+
