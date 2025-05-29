@@ -1,6 +1,6 @@
 # 🛍️ E-commerce Platform Backend (FastAPI)
 
-A feature-rich, production-ready e-commerce backend and admin panel built with **FastAPI** and **React**. It includes full support for product management, customer shopping, secure authentication, admin tools, and more.
+A feature-rich, production-ready e-commerce backend and admin panel built with **FastAPI**. It includes full support for product management, customer shopping, secure authentication, admin tools, and more.
 
 ---
 
